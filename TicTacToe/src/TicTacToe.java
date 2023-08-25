@@ -15,7 +15,8 @@ public class TicTacToe {
         while (!gameFinished) {
             printBoard(board);
 
-            System.out.print("Игрок " + currentPlayer + ", введите строку и столбец (например, 1 2): ");
+            System.out.print("Игрок " + currentPlayer + ", введите строку и " +
+                    "столбец через пробел и нажмите Enter \n (например, 1 \"пробел\" 2 \"Enter\" ): ");
             int row = scanner.nextInt() - 1;
             int col = scanner.nextInt() - 1;
 
